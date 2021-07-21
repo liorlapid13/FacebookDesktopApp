@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33612573-EEF3-440C-9588-519E969390B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FacebookDesktopUI</RootNamespace>
+    <AssemblyName>FacebookDesktopUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook">
+      <HintPath>..\..\..\Documents\B.Sc\2020\C\Design Patterns\V8.0.0.0\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="FbGraphApiWrapper">
+      <HintPath>..\..\..\Documents\B.Sc\2020\C\Design Patterns\V8.0.0.0\FbGraphApiWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FriendshipQuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FriendshipQuizForm.Designer.cs">
+      <DependentUpon>FriendshipQuizForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FriendshipsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FriendshipsForm.Designer.cs">
+      <DependentUpon>FriendshipsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationFilterForm.Designer.cs">
+      <DependentUpon>LocationFilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdvancedFriendFiltersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvancedFriendFiltersForm.Designer.cs">
+      <DependentUpon>AdvancedFriendFiltersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenderFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenderFilterForm.Designer.cs">
+      <DependentUpon>GenderFilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyPostsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyPostsForm.Designer.cs">
+      <DependentUpon>MyPostsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostsConfigurationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostsConfigurationForm.Designer.cs">
+      <DependentUpon>PostsConfigurationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FriendshipQuizForm.resx">
+      <DependentUpon>FriendshipQuizForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FriendshipsForm.resx">
+      <DependentUpon>FriendshipsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationFilterForm.resx">
+      <DependentUpon>LocationFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdvancedFriendFiltersForm.resx">
+      <DependentUpon>AdvancedFriendFiltersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenderFilterForm.resx">
+      <DependentUpon>GenderFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyPostsForm.resx">
+      <DependentUpon>MyPostsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PostsConfigurationForm.resx">
+      <DependentUpon>PostsConfigurationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.Checkin.datasource" />
+    <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.Event.datasource" />
+    <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.Group.datasource" />
+    <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.Page.datasource" />
+    <None Include="Properties\DataSources\FacebookWrapper.ObjectModel.User.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Facebook Friendships Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Advanced Friend Filters Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Advanced Friend Filters Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Advanced Friend Filters Logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Friendships Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FacebookLogic\FacebookLogic.csproj">
+      <Project>{cc10b8ad-7081-4c89-8472-acd62d701b2f}</Project>
+      <Name>FacebookLogic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
