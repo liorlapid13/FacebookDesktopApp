@@ -1,7 +1,7 @@
 Facebook desktop app with original features
 Contributors: Lior Lapid & Shahar Chalfon
 Design Patterns Course - Summer Semester 2020
-Developed primely in C#
+Developed solely in C#
 Using Facebook API
 
 ==========================Exercise Checking Report==========================
