@@ -1,4 +1,6 @@
-Facebook desktop app with original features created by Lior Lapid and Shahar Chalfon as part of a Design Patterns Course in the summer semester of 2020
+Facebook desktop app with original features
+Contributors: Lior Lapid & Shahar Chalfon
+Design Patterns Course - Summer Semester 2020
 Developed primely in C#
 Using Facebook API
 
